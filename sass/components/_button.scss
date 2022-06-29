@@ -1,0 +1,18 @@
+.button {
+    background-color: var(--primary-element-color);
+    color: var(--first-color-element);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: transparent;
+    border-radius: 4px;
+  
+    font-family: inherit;
+    @include font(700, 16px, 1.87, 0.06em);
+  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+  

@@ -1,0 +1,48 @@
+.portfolio {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .portfolio__item {
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 6 * 15px) / 3);
+    }
+
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .portfolio__link {
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+
+    color: inherit;
+  
+    @include font(null, 16px, 1.87, 0.03em);
+  
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    &:hover .product__text,
+    &:focus .product__text {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+

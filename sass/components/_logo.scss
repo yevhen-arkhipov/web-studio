@@ -1,0 +1,24 @@
+.logo {
+    display: block;
+    color: var(--primary-element-color);
+  
+    font-family: 'Raleway';
+    @include font(700, 24px, 1.17, 0.03em);
+
+    @media screen and (min-width: 1200px) {
+      @include font(700, 26px, 1.2, 0.03em);
+    }
+    
+    &--footer-main {
+      margin-bottom: 20px;
+    }
+
+    .logo__text {
+      color: var(--title-color);
+      &--inverse {
+        color: var(--first-color-element);
+      }
+    }
+}
+
+

@@ -1,0 +1,24 @@
+.team__card {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  
+    .team__name {
+      margin-bottom: 10px;
+    
+      color: var(--title-color);
+    
+      @include font(500, 16px, 1.18, 0.03em);
+    }
+    
+    .team__text {
+    margin-bottom: 16px;
+  
+    color: inherit;
+  
+    @include font(null, 16px, 1.18, 0.03em);
+    }
+  }
+
+
+  

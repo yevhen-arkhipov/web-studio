@@ -1,0 +1,26 @@
+.header__button {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+
+  background-color: var(--first-color-element);
+  border: none;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover .header__icon,
+    &:focus .header__icon {
+        fill: var(--primary-element-color);
+    }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+    }
+}
+
+.header__icon {
+  fill: var(--title-color);
+}

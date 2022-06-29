@@ -1,0 +1,20 @@
+.footer-social {
+    margin-top: 60px;
+    padding: 0;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
+  
+    .footer-social__title {
+      margin-bottom: 20px;
+    
+      color: var(--first-color-element);
+    
+      @include font(700, 14px, 1.14, 0.03em);
+      text-transform: uppercase;
+    }
+  }
